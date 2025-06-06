@@ -45,7 +45,7 @@
         <div data-mdb-input-init class="form-outline mb-4">
             {{-- Adicionado @error e old() para o campo 'nome' --}}
             <input type="text" id="form2Example11" class="form-control @error('nome') is-invalid @enderror"
-            placeholder="Informe seu Login" name="email" value="r@teste.com" required /> 
+            placeholder="Informe seu Login" name="email"  required /> 
             <label class="form-label" for="form2Example11">Email</label>
             @error('nome')
                 <div class="invalid-feedback">
@@ -56,7 +56,7 @@
 
         <div data-mdb-input-init class="form-outline mb-4">
             {{-- Adicionado @error para o campo 'password' --}}
-            <input type="password" id="form2Example22" value="12345678" class="form-control @error('password') is-invalid @enderror" placeholder="Informe sua Senha" name="password" required /> 
+            <input type="password" id="form2Example22"  class="form-control @error('password') is-invalid @enderror" placeholder="Informe sua Senha" name="password" required /> 
             <label class="form-label" for="form2Example22">Senha</label>
             @error('password')
                 <div class="invalid-feedback">
