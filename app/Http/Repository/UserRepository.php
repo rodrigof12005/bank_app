@@ -32,7 +32,6 @@ class UserRepository
                 'nome' => $request->nome,
                 'email' => $request->email,
                 'conta' => $numeroConta,
-                // 'saldo' => 100.55,
                 'password' => Hash::make($request->password), 
                 'cpf' => $request->cpf, 
             ]);
