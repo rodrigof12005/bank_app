@@ -21,8 +21,8 @@ class TransationRepository
     public function depositar(Request $request)
     {
         $valorInput = $request->input('valor_deposito');
-        $valorInput = str_replace('.', '', $valorInput); // Remove os pontos (separadores de milhares)
-        $valorInput = str_replace(',', '.', $valorInput); // Substitui a vírgula (separador decimal) por ponto
+        $valorInput = str_replace('.', '', $valorInput); 
+        $valorInput = str_replace(',', '.', $valorInput); 
         $request->merge(['valor_deposito' => $valorInput]);
 
         $request->validate([
